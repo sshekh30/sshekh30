@@ -21,7 +21,13 @@ CONTENT = [
     ("field", "Stack.Data", "PostgreSQL, MongoDB, Redis, MySQL, Redshift, Hive, Airflow"),
     ("field", "Languages.Real", "English, Hindi"),
     ("spacer",),
-    ("field", "Packages", "Contextual Auto-Response Messaging Agent (CARMA) \u00b7 Elastic Face Recognition \u00b7 Distributed File Discovery"),
+    # ("field", "Packages", "Contextual Auto-Response Messaging Agent (CARMA) \u00b7 Elastic Face Recognition \u00b7 Distributed File Discovery"),
+    ("header", "Packages"),
+    ("field", "CARMA", "Go/Gin backend for contextual reply generation \u2014 SHA-256 response caching, config-injected OpenRouter client (Llama 3.3 70B)"),
+    ("field", "Face Recognition", "Elastic face-recognition pipeline on AWS \u2014 custom EC2 autoscaling on SQS queue depth (0-15 instances), MTCNN/FaceNet, Docker/ECR"),
+    ("field", "File Discovery", "C++17 file-discovery server \u2014 edge-triggered epoll, pthread rwlocks, length-prefixed framing; 1,000+ concurrent connections"),
+    ("field", "Metrics Orchestrator", "Full-stack metrics dashboard \u2014 FastAPI backend, Vue.js frontend, Dockerized with GitHub Actions CI/CD"),
+    ("field", "SOPA", "Custom programming language in Prolog \u2014 DCG-based lexer/parser, AST, runtime evaluator with control flow, expressions, and type handling"),
     ("field", "Focus", "Production systems debugging, distributed systems, backend services"),
     ("spacer",),
     ("header", "Contact"),
@@ -132,8 +138,8 @@ def build(theme_name):
 
     panel_h = len(rows) * LH_P
     total_h = BAR_H + 24 + max(portrait_h, panel_h) + PAD
-    panel_w = max(sum(len(seg[0]) for seg in r) for r in rows) * ADV_P
-    total_w = panel_x + panel_w + PAD
+    panel_w = max(sum(len(seg[0]) for seg in r) for r in rows) * (FS_P * 0.64)
+    total_w = panel_x + panel_w + PAD + 24
 
     cls_fill = dict(prompt=t["prompt"], at=t["at"], key=t["key"], leader=t["leader"],
                     header=t["header"], text=t["text"], add=t["add"], dele=t["dele"])
