@@ -32,7 +32,6 @@ CONTENT = [
     ("field", "SOPA", "Custom programming language in Prolog \u2014 DCG-based lexer/parser, AST, runtime evaluator with control flow, expressions, and type handling"),
     ("field", "Focus", "Production systems debugging, distributed systems, backend services"),
     ("spacer",),
-     ("spacer",),
     ("header", "Contact"),
     ("field", "Email", "sshekh30@asu.edu"),
     ("field", "LinkedIn", "linkedin.com/in/satyam-shekhar22"),
