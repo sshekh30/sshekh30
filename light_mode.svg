@@ -1,0 +1,268 @@
+<svg width="927" height="787" viewBox="0 0 927 787" xmlns="http://www.w3.org/2000/svg" role="img">
+<style>
+text{font-family:"JetBrains Mono","Fira Code","DejaVu Sans Mono","SFMono-Regular",Consolas,monospace;}
+.prompt{fill:#2e7d32;}
+.at{fill:#0e7490;}
+.key{fill:#2959aa;}
+.leader{fill:#c3c8da;}
+.header{fill:#7c3aed;}
+.text{fill:#343b58;}
+.add{fill:#1a7f37;}
+.dele{fill:#cf222e;}
+.portrait{fill:#0e7490;}
+.title{fill:#8a90a6;}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{50%{opacity:0}}
+.line{opacity:0;animation:rise .5s ease forwards;}
+.pf{opacity:0;animation:fadein .9s ease forwards;}
+.cursor{animation:blink 1.1s step-end infinite;}
+</style>
+<rect x="1" y="1" width="925" height="785" rx="12" fill="#ffffff" stroke="#d5d8e0" stroke-width="1.5"/>
+<path d="M1,13 a12,12 0 0 1 12,-12 h901 a12,12 0 0 1 12,12 v21 h-925 z" fill="#f2f3f7"/>
+<circle cx="22" cy="17" r="6" fill="#ec6a5e"/>
+<circle cx="42" cy="17" r="6" fill="#f5bf4f"/>
+<circle cx="62" cy="17" r="6" fill="#61c554"/>
+<text x="463" y="21" text-anchor="middle" font-size="12" class="title">satyam@shekhar: ~/profile</text>
+<g class="pf" style="animation-delay:.1s">
+<text x="26" y="58" font-size="10.5" class="portrait" xml:space="preserve">
+<tspan x="26" dy="0">                              +</tspan>
+<tspan x="26" dy="11.13">                      +%@@@@@@@@@@@@@#</tspan>
+<tspan x="26" dy="11.13">                *@@@@@@@@@@@@@@@@@@@@@@@@%</tspan>
+<tspan x="26" dy="11.13">              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@%</tspan>
+<tspan x="26" dy="11.13">            @@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</tspan>
+<tspan x="26" dy="11.13">          @@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%</tspan>
+<tspan x="26" dy="11.13">         @@@%@@@%@%@@@@@@@@@@@@%@@@@@@@@@@@@@@@%@%</tspan>
+<tspan x="26" dy="11.13">      *@@@@@@@@@@@@@@@@@%%#*****###%%%@@@@@@@@@@@@</tspan>
+<tspan x="26" dy="11.13">     @@@@@@@%%@@@@@%%%%##***++*******##%%%%%@@@@@@@</tspan>
+<tspan x="26" dy="11.13">     @@@@@@@@@@%%%####***++++++*++++++******##@@@@@%</tspan>
+<tspan x="26" dy="11.13">    *@%@@@@@@@%########***++++====+++++******#%@@@@@#</tspan>
+<tspan x="26" dy="11.13">     @@@@@@@@%%%########***+++===++++********#%@@@@@#</tspan>
+<tspan x="26" dy="11.13">     @@@@@@@@@%%%%#####****+++=++++*+*+*******#@@@@@*</tspan>
+<tspan x="26" dy="11.13">      @@@@@@@%%%%%%##**+=-=============++******%@@@@</tspan>
+<tspan x="26" dy="11.13">      #@@@@@%%#%%%%%%%%%#+=-::::: :-=*##%%%#%###@@@@</tspan>
+<tspan x="26" dy="11.13">      #@@@@%%#%%%%%#####*++=-------=++**********%@@#</tspan>
+<tspan x="26" dy="11.13">      %@@@@%%%%######*######**++++*###*#*#*###***%@</tspan>
+<tspan x="26" dy="11.13">      %@@@@#%%%%%@@#%*#+####%#****####+#*#+%%%%#*#%</tspan>
+<tspan x="26" dy="11.13">      *#@@%#%%%%@@%#***#######**+*###******#%%%#*+%</tspan>
+<tspan x="26" dy="11.13">      #*#@%######%%#########****+*********####****%</tspan>
+<tspan x="26" dy="11.13">      *#%@%####******+==**###*++==+**++===+++++++*#*</tspan>
+<tspan x="26" dy="11.13">       @@@@%%##+++==-:-=*++=++-  ==-===-:::---==+*#%</tspan>
+<tspan x="26" dy="11.13">       @@@@@%#*+=--:-=+++##%#%#+*##%#*====-:---+*#@@</tspan>
+<tspan x="26" dy="11.13">        @@@@%%##*+=+**#%@@@@@@%%%@@@@@%*+++===+*#%@@</tspan>
+<tspan x="26" dy="11.13">        @@@@@@%%%#*#%@@@@@@%%%##%%@@@%@@@%#**#%%@@@@</tspan>
+<tspan x="26" dy="11.13">         @@@@@%%@%%%@@@@@@%%#*+*+*##%@@@@@%#%@%%@@@</tspan>
+<tspan x="26" dy="11.13">         @@%%%%@@@%%%@%%%%#*+===-==+#%%%@%%%@%%%%@#</tspan>
+<tspan x="26" dy="11.13">         *@@@%%%%@@@@@%%########*******%%%%@@%%%@@</tspan>
+<tspan x="26" dy="11.13">          %@@@%%%@@@@@@@#*****##**+++*%@@@@@@%@@@</tspan>
+<tspan x="26" dy="11.13">           @@@@@@%%@%%@@@%##****+***#%%@@@@@%@@%</tspan>
+<tspan x="26" dy="11.13">        :  @@@@@@%@%%@%@@%%#*+=+*##%@@@@%%%@@@*</tspan>
+<tspan x="26" dy="11.13">           @@%@@@@@@%%@%@@@@%%%%%@@@@@@%%@@@@#</tspan>
+<tspan x="26" dy="11.13">            @@%%@@@@@@@@%@@@@@@@@@@@%@@@@@%%@*</tspan>
+<tspan x="26" dy="11.13">             @@@%%%%@@@@@@@@@@@@@@@@@@@%%%####</tspan>
+<tspan x="26" dy="11.13">              *@@%%##%%%@@@@@%%@@@@@%%%##**#@#</tspan>
+<tspan x="26" dy="11.13">                 *%%#############%%##**+*#%@@</tspan>
+<tspan x="26" dy="11.13">                    +*####***++*++++++*##%@@#</tspan>
+<tspan x="26" dy="11.13">                         +*##%%%%###%%%@@@#</tspan>
+<tspan x="26" dy="11.13">                                  ===</tspan>
+</text></g>
+<text x="394" y="58" font-size="13" class="line" style="animation-delay:0.35s" xml:space="preserve">
+<tspan class="prompt">satyam</tspan>
+<tspan class="at">@</tspan>
+<tspan class="prompt">shekhar</tspan>
+<tspan class="leader"> ─────────────────────────────────────────────</tspan>
+</text>
+<text x="394" y="77" font-size="13" class="line" style="animation-delay:0.39s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">OS</tspan>
+<tspan class="leader"> ................... </tspan>
+<tspan class="text">macOS, Ubuntu, Windows</tspan>
+</text>
+<text x="394" y="96" font-size="13" class="line" style="animation-delay:0.44s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Host</tspan>
+<tspan class="leader"> ................. </tspan>
+<tspan class="text">Arizona State University</tspan>
+</text>
+<text x="394" y="115" font-size="13" class="line" style="animation-delay:0.48s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Kernel</tspan>
+<tspan class="leader"> ............... </tspan>
+<tspan class="text">Software Development Engineer</tspan>
+</text>
+<text x="394" y="134" font-size="13" class="line" style="animation-delay:0.53s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Uptime</tspan>
+<tspan class="leader"> ............... </tspan>
+<tspan class="text">26 years</tspan>
+</text>
+<text x="394" y="153" font-size="13" class="line" style="animation-delay:0.57s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Shell</tspan>
+<tspan class="leader"> ................ </tspan>
+<tspan class="text">zsh, bash</tspan>
+</text>
+<text x="394" y="172" font-size="13" class="line" style="animation-delay:0.62s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">IDE</tspan>
+<tspan class="leader"> .................. </tspan>
+<tspan class="text">VS Code</tspan>
+</text>
+<text x="394" y="191" font-size="13" class="line" style="animation-delay:0.67s" xml:space="preserve">
+<tspan class="leader">.</tspan>
+</text>
+<text x="394" y="210" font-size="13" class="line" style="animation-delay:0.71s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Experience</tspan>
+<tspan class="leader"> ........... </tspan>
+<tspan class="text">Instructional Assistant @ ASU · Research</tspan>
+</text>
+<text x="394" y="229" font-size="13" class="line" style="animation-delay:0.75s" xml:space="preserve">
+<tspan class="leader">                        </tspan>
+<tspan class="text">Asst @ HEAL Lab · Incedo (A10 Networks /</tspan>
+</text>
+<text x="394" y="248" font-size="13" class="line" style="animation-delay:0.80s" xml:space="preserve">
+<tspan class="leader">                        </tspan>
+<tspan class="text">ACOS) · PharmEasy</tspan>
+</text>
+<text x="394" y="267" font-size="13" class="line" style="animation-delay:0.84s" xml:space="preserve">
+<tspan class="leader">.</tspan>
+</text>
+<text x="394" y="286" font-size="13" class="line" style="animation-delay:0.89s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Languages.Programming</tspan>
+<tspan class="leader">  </tspan>
+<tspan class="text">Go, C, C++, Python, Java, JS / TS</tspan>
+</text>
+<text x="394" y="305" font-size="13" class="line" style="animation-delay:0.93s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Stack.Systems</tspan>
+<tspan class="leader"> ........ </tspan>
+<tspan class="text">Distributed Systems, TCP/IP, epoll,</tspan>
+</text>
+<text x="394" y="324" font-size="13" class="line" style="animation-delay:0.98s" xml:space="preserve">
+<tspan class="leader">                        </tspan>
+<tspan class="text">pthreads, GDB, Wireshark</tspan>
+</text>
+<text x="394" y="343" font-size="13" class="line" style="animation-delay:1.02s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Stack.Backend</tspan>
+<tspan class="leader"> ........ </tspan>
+<tspan class="text">Kafka, Gin, FastAPI, Node.js, REST</tspan>
+</text>
+<text x="394" y="362" font-size="13" class="line" style="animation-delay:1.07s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Stack.Cloud</tspan>
+<tspan class="leader"> .......... </tspan>
+<tspan class="text">AWS, Docker, Jenkins, CI/CD, Grafana</tspan>
+</text>
+<text x="394" y="381" font-size="13" class="line" style="animation-delay:1.11s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Stack.Data</tspan>
+<tspan class="leader"> ........... </tspan>
+<tspan class="text">PostgreSQL, MongoDB, Redis, MySQL,</tspan>
+</text>
+<text x="394" y="400" font-size="13" class="line" style="animation-delay:1.16s" xml:space="preserve">
+<tspan class="leader">                        </tspan>
+<tspan class="text">Redshift, Hive, Airflow</tspan>
+</text>
+<text x="394" y="419" font-size="13" class="line" style="animation-delay:1.21s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Languages.Real</tspan>
+<tspan class="leader"> ....... </tspan>
+<tspan class="text">English, Hindi</tspan>
+</text>
+<text x="394" y="438" font-size="13" class="line" style="animation-delay:1.25s" xml:space="preserve">
+<tspan class="leader">.</tspan>
+</text>
+<text x="394" y="457" font-size="13" class="line" style="animation-delay:1.29s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Packages</tspan>
+<tspan class="leader"> ............. </tspan>
+<tspan class="text">Contextual Auto-Response Messaging Agent</tspan>
+</text>
+<text x="394" y="476" font-size="13" class="line" style="animation-delay:1.34s" xml:space="preserve">
+<tspan class="leader">                        </tspan>
+<tspan class="text">(CARMA) · Elastic Face Recognition ·</tspan>
+</text>
+<text x="394" y="495" font-size="13" class="line" style="animation-delay:1.38s" xml:space="preserve">
+<tspan class="leader">                        </tspan>
+<tspan class="text">Distributed File Discovery</tspan>
+</text>
+<text x="394" y="514" font-size="13" class="line" style="animation-delay:1.43s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Focus</tspan>
+<tspan class="leader"> ................ </tspan>
+<tspan class="text">Production systems debugging,</tspan>
+</text>
+<text x="394" y="533" font-size="13" class="line" style="animation-delay:1.48s" xml:space="preserve">
+<tspan class="leader">                        </tspan>
+<tspan class="text">distributed systems, backend services</tspan>
+</text>
+<text x="394" y="552" font-size="13" class="line" style="animation-delay:1.52s" xml:space="preserve">
+<tspan class="leader">.</tspan>
+</text>
+<text x="394" y="571" font-size="13" class="line" style="animation-delay:1.56s" xml:space="preserve">
+<tspan class="header">- </tspan>
+<tspan class="header">Contact</tspan>
+<tspan class="leader"> ─────────────────────────────────────────────────</tspan>
+</text>
+<text x="394" y="590" font-size="13" class="line" style="animation-delay:1.61s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Email</tspan>
+<tspan class="leader"> ................ </tspan>
+<tspan class="text">sshekh30@asu.edu</tspan>
+</text>
+<text x="394" y="609" font-size="13" class="line" style="animation-delay:1.65s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">LinkedIn</tspan>
+<tspan class="leader"> ............. </tspan>
+<tspan class="text">satyam-shekhar22</tspan>
+</text>
+<text x="394" y="628" font-size="13" class="line" style="animation-delay:1.70s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Portfolio</tspan>
+<tspan class="leader"> ............ </tspan>
+<tspan class="text">satyamshekhar.vercel.app</tspan>
+</text>
+<text x="394" y="647" font-size="13" class="line" style="animation-delay:1.75s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">GitHub</tspan>
+<tspan class="leader"> ............... </tspan>
+<tspan class="text">sshekh30</tspan>
+</text>
+<text x="394" y="666" font-size="13" class="line" style="animation-delay:1.79s" xml:space="preserve">
+<tspan class="leader">.</tspan>
+</text>
+<text x="394" y="685" font-size="13" class="line" style="animation-delay:1.83s" xml:space="preserve">
+<tspan class="header">- </tspan>
+<tspan class="header">GitHub Stats</tspan>
+<tspan class="leader"> ────────────────────────────────────────────</tspan>
+</text>
+<text x="394" y="704" font-size="13" class="line" style="animation-delay:1.88s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Repos</tspan>
+<tspan class="leader"> ................ </tspan>
+<tspan class="text" id="repo_data">…</tspan>
+</text>
+<text x="394" y="723" font-size="13" class="line" style="animation-delay:1.92s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Commits</tspan>
+<tspan class="leader"> .............. </tspan>
+<tspan class="text" id="commit_data">…</tspan>
+</text>
+<text x="394" y="742" font-size="13" class="line" style="animation-delay:1.97s" xml:space="preserve">
+<tspan class="leader">. </tspan>
+<tspan class="key">Lines of Code</tspan>
+<tspan class="leader"> ........ </tspan>
+<tspan class="text" id="loc_data">…</tspan>
+<tspan class="text"> (</tspan>
+<tspan class="add" id="loc_add_data">…</tspan>
+<tspan class="add">++</tspan>
+<tspan class="text">, </tspan>
+<tspan class="dele" id="loc_del_data">…</tspan>
+<tspan class="dele">--</tspan>
+<tspan class="text">)</tspan>
+</text>
+<rect class="cursor" x="686" y="731" width="8" height="13" fill="#2e7d32" opacity="0" style="animation-delay:2.02s"/>
+</svg>
