@@ -30,10 +30,10 @@ CONTENT = [
     ("field", "Portfolio", "satyamshekhar.vercel.app"),
     ("field", "GitHub", "sshekh30"),
     ("spacer",),
-    ("header", "GitHub Stats"),
-    ("stat", "Repos", "repo_data"),
-    ("stat", "Commits", "commit_data"),
-    ("loc", "Lines of Code", None),
+    # ("header", "GitHub Stats"),
+    # ("stat", "Repos", "repo_data"),
+    # ("stat", "Commits", "commit_data"),
+    # ("loc", "Lines of Code", None),
 ]
 
 THEMES = {
