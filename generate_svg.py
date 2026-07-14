@@ -12,7 +12,7 @@ CONTENT = [
     #("field", "Shell", "zsh, bash"),
     #("field", "IDE", "VS Code"),
     ("field", "Status", "Open to New-Grad SWE / backend roles (2026)"),
-    ("field", "Location", "Tempe, AZ \u00b7 open to relocation"),
+    # ("field", "Location", "Tempe, AZ \u00b7 open to relocation"),
     ("spacer",),
     ("field", "Experience", "Instructional Assistant @ ASU \u00b7 Research Asst @ HEAL Lab \u00b7 Incedo (A10 Networks / ACOS) \u00b7 PharmEasy"),
     ("spacer",),
