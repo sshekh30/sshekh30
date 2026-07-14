@@ -1,4 +1,4 @@
-<svg width="985" height="787" viewBox="0 0 985 787" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="927" height="711" viewBox="0 0 927 711" xmlns="http://www.w3.org/2000/svg" role="img">
 <style>
 text{font-family:"JetBrains Mono","Fira Code","DejaVu Sans Mono","SFMono-Regular",Consolas,monospace;}
 .prompt{fill:#2e7d32;}
@@ -18,12 +18,12 @@ text{font-family:"JetBrains Mono","Fira Code","DejaVu Sans Mono","SFMono-Regular
 .pf{opacity:0;animation:fadein .9s ease forwards;}
 .cursor{animation:blink 1.1s step-end infinite;}
 </style>
-<rect x="1" y="1" width="983" height="785" rx="12" fill="#ffffff" stroke="#d5d8e0" stroke-width="1.5"/>
-<path d="M1,13 a12,12 0 0 1 12,-12 h959 a12,12 0 0 1 12,12 v21 h-983 z" fill="#f2f3f7"/>
+<rect x="1" y="1" width="925" height="709" rx="12" fill="#ffffff" stroke="#d5d8e0" stroke-width="1.5"/>
+<path d="M1,13 a12,12 0 0 1 12,-12 h901 a12,12 0 0 1 12,12 v21 h-925 z" fill="#f2f3f7"/>
 <circle cx="22" cy="17" r="6" fill="#ec6a5e"/>
 <circle cx="42" cy="17" r="6" fill="#f5bf4f"/>
 <circle cx="62" cy="17" r="6" fill="#61c554"/>
-<text x="492" y="21" text-anchor="middle" font-size="12" class="title">satyam@shekhar: ~/profile</text>
+<text x="463" y="21" text-anchor="middle" font-size="12" class="title">satyam@shekhar: ~/profile</text>
 <g class="pf" style="animation-delay:.1s">
 <text x="26" y="58" font-size="10.5" class="portrait" xml:space="preserve">
 <tspan x="26" dy="0">                              +</tspan>
@@ -234,35 +234,5 @@ text{font-family:"JetBrains Mono","Fira Code","DejaVu Sans Mono","SFMono-Regular
 <text x="394" y="666" font-size="13" class="line" style="animation-delay:1.79s" xml:space="preserve">
 <tspan class="leader">.</tspan>
 </text>
-<text x="394" y="685" font-size="13" class="line" style="animation-delay:1.83s" xml:space="preserve">
-<tspan class="header">- </tspan>
-<tspan class="header">GitHub Stats</tspan>
-<tspan class="leader"> ────────────────────────────────────────────</tspan>
-</text>
-<text x="394" y="704" font-size="13" class="line" style="animation-delay:1.88s" xml:space="preserve">
-<tspan class="leader">. </tspan>
-<tspan class="key">Repos</tspan>
-<tspan class="leader"> ................ </tspan>
-<tspan class="text" id="repo_data">6</tspan>
-</text>
-<text x="394" y="723" font-size="13" class="line" style="animation-delay:1.92s" xml:space="preserve">
-<tspan class="leader">. </tspan>
-<tspan class="key">Commits</tspan>
-<tspan class="leader"> .............. </tspan>
-<tspan class="text" id="commit_data">271</tspan>
-</text>
-<text x="394" y="742" font-size="13" class="line" style="animation-delay:1.97s" xml:space="preserve">
-<tspan class="leader">. </tspan>
-<tspan class="key">Lines of Code</tspan>
-<tspan class="leader"> ........ </tspan>
-<tspan class="text" id="loc_data">3,914</tspan>
-<tspan class="text"> (</tspan>
-<tspan class="add" id="loc_add_data">5,818</tspan>
-<tspan class="add">++</tspan>
-<tspan class="text">, </tspan>
-<tspan class="dele" id="loc_del_data">1,904</tspan>
-<tspan class="dele">--</tspan>
-<tspan class="text">)</tspan>
-</text>
-<rect class="cursor" x="686" y="731" width="8" height="13" fill="#2e7d32" opacity="0" style="animation-delay:2.02s"/>
+<rect class="cursor" x="406" y="655" width="8" height="13" fill="#2e7d32" opacity="0" style="animation-delay:1.83s"/>
 </svg>
