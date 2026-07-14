@@ -243,24 +243,24 @@ text{font-family:"JetBrains Mono","Fira Code","DejaVu Sans Mono","SFMono-Regular
 <tspan class="leader">. </tspan>
 <tspan class="key">Repos</tspan>
 <tspan class="leader"> ................ </tspan>
-<tspan class="text" id="repo_data">…</tspan>
+<tspan class="text" id="repo_data">6</tspan>
 </text>
 <text x="394" y="723" font-size="13" class="line" style="animation-delay:1.92s" xml:space="preserve">
 <tspan class="leader">. </tspan>
 <tspan class="key">Commits</tspan>
 <tspan class="leader"> .............. </tspan>
-<tspan class="text" id="commit_data">…</tspan>
+<tspan class="text" id="commit_data">269</tspan>
 </text>
 <text x="394" y="742" font-size="13" class="line" style="animation-delay:1.97s" xml:space="preserve">
 <tspan class="leader">. </tspan>
 <tspan class="key">Lines of Code</tspan>
 <tspan class="leader"> ........ </tspan>
-<tspan class="text" id="loc_data">…</tspan>
+<tspan class="text" id="loc_data">3,662</tspan>
 <tspan class="text"> (</tspan>
-<tspan class="add" id="loc_add_data">…</tspan>
+<tspan class="add" id="loc_add_data">5,566</tspan>
 <tspan class="add">++</tspan>
 <tspan class="text">, </tspan>
-<tspan class="dele" id="loc_del_data">…</tspan>
+<tspan class="dele" id="loc_del_data">1,904</tspan>
 <tspan class="dele">--</tspan>
 <tspan class="text">)</tspan>
 </text>
