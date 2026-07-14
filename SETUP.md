@@ -1,72 +1,110 @@
-# Setup — animated neofetch profile card
+# sshekh30/sshekh30 — profile card
 
-This makes your GitHub profile show an animated terminal card with a live
-stats line that refreshes itself every 12 hours.
+This repo powers the animated terminal card on my GitHub profile. The card is a
+pair of themed SVGs (dark + light) generated from a single Python script.
+
+> **Current mode: static.** The card shows fixed content that I edit and
+> regenerate by hand. The live GitHub-stats automation is present but
+> **disabled** — see [Optional: live stats](#optional-live-github-stats) to turn
+> it back on.
 
 ## What's in here
 
-| File | Purpose |
-|------|---------|
-| `README.md` | The profile page. Auto-switches dark/light via `<picture>`. |
-| `dark_mode.svg` / `light_mode.svg` | The two themed cards. |
-| `update_stats.py` | Fetches your GitHub stats and writes them into both SVGs. |
-| `.github/workflows/update-stats.yml` | Runs the script on a schedule. |
-| `generate_svg.py` + `ascii_v2.txt` | Source used to regenerate the SVGs if you ever edit the content or portrait. Not needed at runtime. |
+| File | Purpose | Needed at runtime? |
+|------|---------|--------------------|
+| `README.md` | The profile page. Uses `<picture>` to auto-switch dark/light. | yes |
+| `dark_mode.svg` / `light_mode.svg` | The two themed cards (the actual output). | yes |
+| `generate_svg.py` | Source generator — edit this to change the card. | no (build-time) |
+| `ascii_v2.txt` | The ASCII portrait characters, read by `generate_svg.py`. | no (build-time) |
+| `update_stats.py` | Fetches GitHub stats into the SVGs. **Dormant** while stats are off. | only if stats on |
+| `.github/workflows/update-stats.yml` | Scheduled runner for the stats script. **Disabled.** | only if stats on |
+| `cache/` | Leftover LOC cache from when stats ran. Safe to delete. | no |
+| `SETUP.md` | This file. | no |
 
-## Steps
+## How it renders
 
-### 1. Create the special repo
-Create a **public** repo named exactly **`sshekh30`** (same as your username).
-GitHub treats `sshekh30/sshekh30` as your profile repo and renders its README
-on your profile page. Tick "Add a README file" so the default branch is `main`.
+GitHub shows the `README.md` of the repo named after my username on my profile.
+`README.md` is just a `<picture>` block that serves `dark_mode.svg` to viewers on
+dark theme and `light_mode.svg` to viewers on light theme:
 
-### 2. Add these files
-Upload everything here into that repo, keeping the folder structure — the
-workflow must live at `.github/workflows/update-stats.yml`. (Drag-and-drop in
-the GitHub web UI works, or push with git.)
-
-### 3. Create a Personal Access Token (PAT)
-The built-in Actions token can't read your contribution/LOC data, so you need a
-classic PAT:
-
-1. GitHub → **Settings → Developer settings → Personal access tokens →
-   Tokens (classic) → Generate new token (classic)**.
-2. Scopes: check **`repo`** and **`read:user`**.
-3. Generate and copy the token (you'll only see it once).
-
-### 4. Add the token as a repo secret
-In the `sshekh30/sshekh30` repo → **Settings → Secrets and variables →
-Actions → New repository secret**:
-- Name: **`STATS_TOKEN`**
-- Value: the PAT you just copied
-
-### 5. Run it once
-Go to the repo's **Actions** tab → **Update profile stats** → **Run workflow**.
-The first run walks every repo to total your lines of code, so it can take a
-few minutes; later runs are fast because results are cached in `cache/`.
-
-When it finishes it commits the filled-in numbers, and your profile card goes
-live. It re-runs automatically every 12 hours (and on every push).
-
-## Editing the content later
-
-The card text is baked into the SVGs. To change a line, the portrait, colors,
-or wrapping, edit `generate_svg.py`, then locally run:
-
-```bash
-python generate_svg.py          # rewrites dark_mode.svg + light_mode.svg
-python update_stats.py          # (optional) re-fills the stats, needs GH_TOKEN + LOGIN
+```markdown
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dark_mode.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./light_mode.svg">
+  <img alt="Satyam Shekhar" src="./light_mode.svg">
+</picture>
 ```
 
-then commit the updated SVGs. The stats IDs (`repo_data`, `commit_data`,
-`loc_data`, `loc_add_data`, `loc_del_data`) must stay intact so the Action can
-keep updating them.
+The typing/fade-in animation plays when the image loads. The card is embedded as
+an image, so text inside it (including the Contact section) is **display-only —
+not clickable** on GitHub. That's a GitHub sandbox limitation, not a bug.
 
-## Notes
+## Editing the card (the normal loop)
 
-- **Dark/light** follows each viewer's GitHub theme automatically.
-- **Width**: the card is ~930px wide because of the longer lines (Experience,
-  Stack.Data, Packages). GitHub scales it down to fit the page — if you ever
-  want the text larger, shortening those lines in `generate_svg.py` is the lever.
-- **Animation**: the typing cascade + blinking cursor play when the image loads.
-  GitHub caches the SVG, so a hard refresh may be needed to see it replay.
+All content lives in the `CONTENT` list near the top of `generate_svg.py`. Each
+entry is one of:
+
+```python
+("field", "Label", "Value")      # a labelled row (wraps automatically)
+("header", "Section Name")       # a "- Section -" divider
+("spacer",)                      # a blank line
+```
+
+To change anything — add/reword a line, reorder sections, tweak colors — edit
+`generate_svg.py`, then run the generator and push. **`ascii_v2.txt` must be in
+the same folder** when you run it (the script reads the portrait from it):
+
+```bash
+cd path/to/repo            # folder with generate_svg.py + ascii_v2.txt
+python generate_svg.py     # overwrites dark_mode.svg + light_mode.svg
+git add dark_mode.svg light_mode.svg
+git commit -m "update profile card"
+git push
+```
+
+Then hard-refresh the profile (Cmd/Ctrl+Shift+R) — GitHub caches the image, so
+changes can take a minute to appear.
+
+### Handy tips
+- **Comment out a line** instead of deleting it — prefix with `#`. Great for
+  temporarily hiding a section (that's how the GitHub Stats block is parked).
+- **Colors** live in the `THEMES` dict (`dark` and `light`). Change a hex value,
+  regenerate, done.
+- **Width / wrapping**: `MAX_VAL` controls how long a value gets before it wraps;
+  the canvas auto-sizes with margin so lines don't clip.
+- **Portrait**: to swap the face, replace `ascii_v2.txt` with new ASCII art of
+  the same rough dimensions and regenerate.
+
+## Optional: live GitHub stats
+
+The card can show auto-updating Repos / Commits / Lines-of-Code, refreshed on a
+schedule. It's currently **off**. To turn it back on:
+
+1. **Uncomment the stats block** in `generate_svg.py`'s `CONTENT` list:
+   ```python
+   ("header", "GitHub Stats"),
+   ("stat", "Repos", "repo_data"),
+   ("stat", "Commits", "commit_data"),
+   ("loc", "Lines of Code", None),
+   ```
+   Regenerate and push. The stat values will show `…` until the Action runs.
+2. **Create a token**: GitHub → Settings → Developer settings → Personal access
+   tokens → Tokens (classic). Scopes: `repo`, `read:user`. Copy it.
+3. **Add the secret**: repo → Settings → Secrets and variables → Actions → New
+   repository secret → name `STATS_TOKEN`, value = the token.
+4. **Enable + run the workflow**: Actions tab → "Update profile stats" →
+   Enable if needed → Run workflow. First run is slow (totals LOC across repos),
+   later runs are cached. It re-runs every 12 hours and on push, committing the
+   filled-in numbers.
+
+To turn stats **off** again: comment the stats block back out, and Actions tab →
+"Update profile stats" → `···` → Disable workflow. (Optionally delete the
+`STATS_TOKEN` secret and revoke the token.)
+
+## Want clickable contact links?
+
+Text inside the card image can't be clickable on GitHub. Two ways to get links:
+- **Badges below the card** — add a row of `shields.io` badges under the
+  `<picture>` block in `README.md`. Functional, but they sit outside the card.
+- **On my portfolio site** (`satyamshekhar.vercel.app`) — a webpage isn't
+  sandboxed like GitHub, so the SVG's own `<a>` links work there.
