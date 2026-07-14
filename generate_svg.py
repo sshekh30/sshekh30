@@ -14,7 +14,7 @@ CONTENT = [
     ("field", "Status", "Open to New-Grad SWE / backend roles (2026)"),
     # ("field", "Location", "Tempe, AZ \u00b7 open to relocation"),
     ("spacer",),
-    ("field", "Experience", "Instructional Assistant @ ASU \u00b7 Research Asst @ HEAL Lab \u00b7 Incedo (A10 Networks / ACOS) \u00b7 PharmEasy"),
+    ("field", "Experience", "Instructional Assistant @ ASU \u00b7 Research Asst @ HEAL Lab, ASU \u00b7 Incedo (A10 Networks / ACOS) \u00b7 PharmEasy"),
     ("spacer",),
     ("field", "Languages.Programming", "Go, C, C++, Python, Java, JS / TS"),
     ("field", "Stack.Systems", "Distributed Systems, TCP/IP, epoll, pthreads, GDB, Wireshark"),
